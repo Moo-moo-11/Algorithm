@@ -1,0 +1,3 @@
+SELECT a.NAME
+FROM CITY a LEFT JOIN COUNTRY b ON a.CountryCode = b.Code
+WHERE b.CONTINENT = 'Africa'
