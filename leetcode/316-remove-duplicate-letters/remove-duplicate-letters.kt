@@ -23,6 +23,10 @@ class Solution {
             added[c] = true
         }
 
-        return stack.joinToString("")
+        val sb = StringBuilder()
+        while (stack.isNotEmpty()) {
+            sb.append(stack.removeFirst())
+        }
+        return String(sb)
     }
 }
