@@ -1,7 +1,7 @@
 class Solution {
     fun numJewelsInStones(jewels: String, stones: String): Int {
         var answer = 0
-        val set = hashSetOf<Char>()
+        val set = mutableSetOf<Char>()
 
         for (jewel in jewels) 
         set.add(jewel)
