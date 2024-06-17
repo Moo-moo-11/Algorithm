@@ -1,7 +1,10 @@
 class Solution {
     fun numJewelsInStones(jewels: String, stones: String): Int {
         var answer = 0
-        val set = jewels.toCharArray()
+        val set = mutableListOf<Char>()
+
+        for (jewel in jewels) 
+        set.add(jewel)
 
         for (stone in stones) 
         if(set.contains(stone)) answer++
