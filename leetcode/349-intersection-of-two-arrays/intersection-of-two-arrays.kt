@@ -5,7 +5,7 @@ class Solution {
         nums1.sort()
 
         for (number in nums2) {
-            if (nums1.binarySearch(number) >= 0) answer.add(number)
+            if (nums1.contains(number)) answer.add(number)
         }
 
         return answer.toIntArray()
